@@ -1,0 +1,13 @@
+load-data-into-jamovi
+level-of-measurement
+descriptive-analyses
+independent-samples-t-test
+paired-samples-t-test
+one-sample-t-test
+oneway-anova
+factorial-anova
+repeated-measures-anova
+mixed-anova
+linear-regression
+logistic-regression
+co-dalej-w-jamovi

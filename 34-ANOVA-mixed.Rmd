@@ -1,22 +1,22 @@
-# ANOVA: Mixed {#mixed-anova}  
+# ANOVA w schemacie mieszanym {#mixed-anova}  
 
-#### How to perform a mixed ANOVA in jamovi: {-}  
+#### Jak wykonać ANOVA w schemacie mieszanym w jamovi: {-}  
 
-1. You need one grouping variable with two levels (e.g. treatment/control) and one continuous outcome variable for each measurement occassion. Make sure that the measurement levels are set^[This is demonstrated in section \@ref(level-of-measurement).] so that the grouping variable is marked with <img src="images/icons/nominal.JPG" width="3%" alt=" the grouped data icon"/> and the continuous variables are marked with <img src="images/icons/continuous.JPG" width="3%" alt=" the continuous data icon"/>.  
-A correct setup should look similar to this:  
-<img src="images/data_format/data_format_anova_mixed.JPG" width="50%"/> 
+1. Potrzebna jest jedna zmienna grupująca o dwóch poziomach (np. treatment/control) i jedna zmienna ilościowa dla każdego pomiaru. Upewnij się, że poziomy pomiaru są ustawione^[Jest to przedstawione w sekcji \@ref(level-of-measurement).] tak, że zmienna grupująca jest oznaczona <img src="images/icons/nominal.JPEG" width="3%" alt=" the grouped data icon"/> a zmienna ilościowa jest oznaczona <img src="images/icons/continuous.JPEG" width="3%" alt=" the continuous data icon"/>.  
+Prawidłowe ustawienie powinno wyglądać podobnie do tego:  
+<img src="images/data_format_anova_mixed.JPG" width="50%"/> 
 
-2. Select `Analyses` -> `ANOVA` -> `Repeated Measures ANOVA`.  
-<img src="images/select/select_anova_repeated.JPG" width="40%"/> 
+2. Wybierz `Analyses` -> `ANOVA` -> `Repeated Measures ANOVA`.  
+<img src="images/select_anova_repeated.JPG" width="40%"/> 
 
-3. In the box __Repeated Measures Factors__: write the name of your outcome variable (e.g. My_scale) and name the levels for each measurement occasion (e.g. Pre, Post and 12 month follow-up). The below images illustrates this.  
-<img src="images/add_var/add_var_anova_repeated_naming_1.JPG" width="30%"/> `->` <img src="images/add_var/add_var_anova_repeated_naming_2.JPG" width="30%"/> 
+3. W polu __Repeated Measures Factors__: wpisz nazwę zmiennej zależnej (np. My_scale) i nazwij poziomy dla każdego pomiaru (np. Pre, Post i 12 month follow-up). Poniższe obrazy przedstawiają, jak należy to zrobić.  
+<img src="images/add_var_anova_repeated_naming_1.JPG" width="30%"/> `->` <img src="images/add_var_anova_repeated_naming_2.JPG" width="30%"/> 
 
-4. Drag and drop your outcome variables to their respective cells in __Repeated Measures Cells__.  
-<img src="images/add_var/add_var_anova_repeated.JPG" width="70%"/> 
+4. Przeciągnij i upuść zmienne zależne do odpowiednich komórek w __Repeated Measures Cells__.  
+<img src="images/add_var_anova_repeated.JPG" width="70%"/> 
 
-5. Move your grouping variables to __Between Subject Factors__.  
-<img src="images/add_var/add_var_anova_mixed.JPG" width="35%"/> 
+5. Przenieś zmienne grupujące do __Between Subject Factors__.  
+<img src="images/add_var_anova_mixed.JPG" width="35%"/> 
 
-6. The result is shown in the right panel:  
-<img src="images/output/output_anova_mixed.JPG" width="70%"/> 
+6. Wyniki są wyświetlane w prawym panelu:  
+<img src="images/output_anova_mixed.JPG" width="70%"/> 

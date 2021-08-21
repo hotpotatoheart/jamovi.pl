@@ -1,22 +1,22 @@
 # (PART\*) ANOVA {-}
 
-# ANOVA: Oneway {#oneway-anova}  
+# Jednoczynnikowa ANOVA {#oneway-anova}  
 
-#### How to perform a Oneway ANOVA in jamovi: {-}
+#### Jak wykonać jednoczynnikową ANOVA w jamovi: {-}
 
-1. You need one grouping variable and one continuous outcome variable. Make sure that the measurement levels are set^[This is demonstrated in section \@ref(level-of-measurement).] so that the grouping variable is marked with <img src="images/icons/nominal.JPG" width="3%" alt=" grouped data icon"/> and the continuous variable is marked with <img src="images/icons/continuous.JPG" width="3%" alt=" the continuous data icon"/>.  
-A correct setup should look similar to this:  
-<img src="images/data_format/data_format_anova.JPG" width="40%"/>  
+1. Potrzebna jest jedna zmienna grupująca i jedna ilościowa zmienna zależna. Upewnij się, że poziomy pomiaru są ustawione^[Jest to przedstawione w sekcji \@ref(level-of-measurement).] tak, że zmienna grupująca jest oznaczona <img src="images/icons/nominal.jpeg" width="3%" alt=" grouped data icon"/> a zmienna ilościowa jest oznaczona <img src="images/icons/continuous.jpeg" width="3%" alt=" the continuous data icon"/>.  
+Prawidłowe ustawienie powinno wyglądać podobnie do tego:  
+<img src="images/data_format_anova.JPG" width="40%"/>  
 
-2. Select `Analyses` -> `ANOVA` -> `One-way ANOVA`.  
-<img src="images/select/select_anova_oneway.JPG" width="45%"/> 
+2. Wybierz `Analyses` -> `ANOVA` -> `One-way ANOVA`.  
+<img src="images/select_anova_oneway.jpeg" width="45%"/> 
 
-3. Drag and drop your outcome variable to __Dependent Variable__ and your grouping variable to __Fixed Factors__.  
-<img src="images/add_var/add_var_anova_oneway.JPG" width="70%"/> 
+3. Przeciągnij i upuść zmienną zależną do __Dependent Variable__ a zmienną grupującą do __Fixed Factors__.  
+<img src="images/add_var_anova_oneway.jpeg" width="70%"/> 
 
-4. Select wether your variances are equal or unequal. To test for equality of variancess using Levene's test, tick the box Equality of variances.  
-<img src="images/add_var/add_var_anova_oneway_2.JPG" width="70%"/> 
+4. Zaznacz, czy wariancje są równe (homogeniczne). Aby przetestować równość (homogeniczność) wariancji za pomocą testu Levene'a, zaznacz pole 'Equality of variances'.  
+<img src="images/add_var_anova_oneway_2.jpeg" width="70%"/> 
 
-5. The results is shown in the right pane:  
-<img src="images/output/output_anova_oneway.JPG" width="70%"/> 
+5. Wyniki są wyświetlane w prawym panelu:  
+<img src="images/output_anova_oneway.jpeg" width="70%"/> 
 

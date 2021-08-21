@@ -1,21 +1,21 @@
-# (PART\*) Getting started {-}
+# (PART\*) Podstawy Pracy {-}
 
-# Opening data in jamovi {#load-data-into-jamovi}
+# Otwieranie danych w jamovi {#load-data-into-jamovi}
 
-#### Opening a file in jamovi {-}
+#### Otwieranie pliku w jamovi {-}
 
-To open a file in jamovi, click the menu icon <img src="images/icons/menu.JPG" width="3%"/> and select `Open file` -> `Browse`.
+By otworzyć plik w  jamovi, kliknij na ikonę w menu <img src="images/icons/menu.jpeg" width="3%"/> i wybierz `Open file` -> `Browse`.
 
-Excel (.xlsx) and LibreOffice (.odt) files are supported in version 1.2.0^[It was supposedly scheduled for stable release in April 2020, but availabe as a non-stable release at jamovi.org.]. For earlier versions of jamovi, it is common to use data files with "comma-separated values" (.csv or .txt). Other supported file formats are JASP files (.jasp), R files (.RData, .RDS), SAS files (.xpt, .sas7bdat), SPSS files (.sav, .zsav, .por) and Stata files (.dta). Got data in Excel and don't know how to get it into jamovi? Continue reading about comma delimited data below to find out.
+Pliki Excel (.xlsx) i LibreOffice (.odt) są obsługiwane od wersji 1.2.0. We wcześniejszych wersjach jamovi często używa się plików danych z „wartościami oddzielonymi przecinkami” (.csv lub .txt). Inne obsługiwane formaty plików to pliki JASP (.jasp), pliki R (.RData, .RDS), pliki SAS (.xpt, .sas7bdat), pliki SPSS (.sav, .zsav, .por) i pliki Stata (.dta ). Masz dane w Excelu i nie wiesz, jak wprowadzić je do jamovi? Kontynuuj czytanie o danych rozdzielanych przecinkami poniżej, aby się dowiedzieć.
 
 
-#### Comma delimited files {-}
+#### Dane oddzielone przecinkami (.csv) {-}
 
-A comma-separated values (csv) file is a text file that uses comma to separate values. The file stores data in plain text, where each line of the file is a record. Despite the name comma-separated, other characters such as semi-colon are sometimes used. See figure 1 below for an example of a .csv-file with semi-colon used. 
+Plik wartości rozdzielanych przecinkami (csv) to plik tekstowy, w którym do rozdzielania wartości używa się przecinków. Plik przechowuje dane w postaci zwykłego tekstu, gdzie każdy wiersz pliku jest rekordem. Pomimo nazwy - "pliki oddzielone przecinkami", czasami używane są inne znaki, takie jak średnik. Zobacz Obraz 1 poniżej, z przykładem pliku .csv ze średnikiem.
 
-<img src="images/csv_data.PNG" alt="Comma delimited data" width="40%"/>  
-Figure 1: _A .csv-file opened in a texteditor._  
+<img src="images/csv_data.PNG" alt="Plik oddzielony przecinkami" width="40%"/>  
+Obraz 1: _A Plik .csv otwarty w Notatniku._  
 
-If you have your data in a spreadsheet program (e.g. Excel), you can create a csv copy of your data by selecting `File` -> `Save as...` and choose `Comma delimited` in the drop-down menu close to the `Save as`-button. Thereafter, you may open the .csv-file in jamovi.  
+Jeśli masz swoje dane w programie do obsługi arkuszy kalkulacyjnych (np. Excel), możesz utworzyć kopię danych w formacie csv, wybierając `Plik` -> `Zapisz jako...` i wybierz `Plik rozdzielany przecinkami` z menu rozwijanego. Następnie `Zapisz jako`. Następnie możesz otworzyć plik .csv w jamovi.
 
 

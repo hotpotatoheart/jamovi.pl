@@ -1,16 +1,16 @@
-# Logistic Regression {#logistic-regression}  
+# Regresja logistyczna {#logistic-regression}  
 
-#### How to perform a logistic regression in jamovi: {-}
+#### Jak wykonać regresję logistyczną w jamovi: {-}
 
-1. You need one continuous predictor variable and one categorical (nominal or ordinal) outcome variable. Make sure that the measurement levels are set^[This is demonstrated in section \@ref(level-of-measurement).] so that the continuous variable is marked with <img src="images/icons/continuous.JPG" width="3%" alt=" the continuous data icon"/> and the grouping variable is marked with <img src="images/icons/nominal.JPG" width="3%" alt=" grouped data icon"/>.  
-A correct setup should look similar to this:   
-<img src="images/data_format/data_format_regression_logistic.JPG" width="25%"/>  
+1. Potrzebna jest jedna ilościowa zmienna objaśniająca oraz jedna kategorialna (porządkowa lub nominalna) zmienna zależna (wynikowa). Upewnij się, że poziomy pomiaru są ustawione^[Jest to przedstawione w sekcji \@ref(level-of-measurement).] tak, że zmienna ilościowa jest oznaczona <img src="images/icons/continuous.JPEG" width="3%" alt=" the continuous data icon"/> a zmienna grupująca jest oznaczona <img src="images/icons/nominal.JPEG" width="3%" alt=" grouped data icon"/>.  
+Prawidłowe ustawienie powinno wyglądać podobnie do tego:   
+<img src="images/data_format_regression_logistic.JPG" width="25%"/>  
 
-2. Logistic regression can be found by selecting `Analyses` -> `Regression`. If the outcome variable is nominal (as in the above image), select `2 Outcomes` if it has 2 outcomes, or `N outcomes`if it has _more_ than 2 outcomes. If the outcome variable is ordinal (e.g. low, medium, high), select `Ordinal Outcomes`.  
-<img src="images/select/select_regression_logistic.JPG" width="40%"/> 
+2. Regresję logistyczną można wykonać, wybierając `Analyses` -> `Regression`. Jeśli zmienna zależna jest nominalna (jak na obrazie poniżej), wybierz `2 Outcomes` jeśli ma 2 warianty lub `N outcomes`jeśli ma więcej wariantów. Jeśli zmienna zależna jest porządkowa (np. low, medium, high), wybierz `Ordinal Outcomes`.  
+<img src="images/select_regression_logistic.JPG" width="40%"/> 
 
-3. Drag and drop your outcome variable to __Dependent Variable__ and your predictor to __Covariates__.  
-<img src="images/add_var/add_var_regression_logistic.JPG" width="70%"/> 
+3. Przeciągnij i upuść zmienną zależną do __Dependent Variable__ a zmienną objaśniającą do __Covariates__.  
+<img src="images/add_var_regression_logistic.JPG" width="70%"/> 
 
-4. The result is shown in the right panel:  
-<img src="images/output/output_regression_logistic.JPG" width="50%"/> 
+4. Wyniki są wyświetlane w prawym panelu:  
+<img src="images/output_regression_logistic.JPG" width="50%"/> 

@@ -1,11 +1,13 @@
 --- 
-title: "The jamovi quickstart guide"
-author: "Jonas Rafi"
-date: "`r Sys.Date()`"
+title: "Jamovi - Skrócona Instrukcja Obsługi"
+author:
+  - Jonas Rafi, Tekst oryginalny
+  - Marek Bitner, Polskie tłumaczenie
+  - Adrianna Szyszka, Polskie tłumaczenie
 knit: bookdown::render_book
 site: bookdown::bookdown_site
-github-repo: jRafi/jamoviguide.com
-url: 'https\://jamoviguide.com'
+github-repo: hotpotatoheart/jamovi.pl
+url: 'https\://jamovi.pl'
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -15,23 +17,32 @@ lot: yes
 lof: yes
 fontsize: 12pt
 monofontoptions: "Scale=0.7"
-description: "The jamovi quickstart guide features a collection of non-technical tutorials on how to conduct common operations in jamovi. This includes how to conduct independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, and logistic regression. Additionally, the tutorials cover the use of csv files, wide data format, and setting the data type in jamovi."
+description: "Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi."
 ---
 
-# Welcome {-}
+# Wstęp {-}
 
-The aim of this website is to provide short, non-technical tutorials on how to do common procedures in jamovi. However, it is not a resource on statistics.
+__Czym jest jamovi?__
 
-If you require an introduction to statistics, there are plenty of other resources, e.g the free e-book <a href="https://www.learnstatswithjamovi.com/">Learning statistics with jamovi</a> by Navarro and Foxcroft.
+jamovi to darmowy pakiet statystyczny „trzeciej generacji”. Zaprojektowany od podstaw, aby był łatwy w użyciu, jamovi jest alternatywą dla kosztownego oprogramowania statystycznego, takiego jak SPSS i SAS. Najnoszą dystrybucję programu możesz znaleźć na <a href="https://www.jamovi.org/"> oficjalnej stronie Jamovi</a> (strona w języku angielskim).
 
-__Contact__
 
-Notice something that is missing or could be improved? Feel free to contact me at jonas.rafi \<at \> psychology.su.se.
+__Czym jest ten dokument?__
 
-__Other languages__
+Celem tej strony jest dostarczenie krótkich intstrukcji dotyczących wykonywania typowych procedur w jamovi. Nie jest to jednak podręcznik statystyczny.
 
-See the <a href="https://www.jamovi.org/community.html">jamovi coummunity resource page</a> for current translations into other languages.  
 
-__License__
+Jeśli potrzebujesz wprowadzenia do statystyki, istnieje wiele innych zasobów, np. bezpłatny anglojęzyczny e-book <a href="https://www.learnstatswithjamovi.com/">Learning statistics with jamovi</a> autorstwa Navarro i Foxcroft.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+__Kontakt__
+
+Czy widzisz coś, czego brakuje lub możnaby poprawić? Zapraszam do kontaktu pod adresem marek.bitner \<at \> gmail.com.
+
+__Inne języki__
+
+W celu znalezienia materiałów w innych językach odwiedź <a href="https://www.jamovi.org/community.html">jamovi coummunity resource page</a>.  
+
+__Licencja__
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Tę instrukcję stworzono pod licencją: <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

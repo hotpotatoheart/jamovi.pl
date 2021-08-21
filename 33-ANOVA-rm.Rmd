@@ -1,20 +1,20 @@
-# ANOVA: Repeated Measures {#repeated-measures-anova}  
+# ANOVA z powtarzanymi pomiarami {#repeated-measures-anova}  
 
-#### How to perform a repeated measures ANOVA in jamovi: {-}
+#### Jak wykonać ANOVA z powtarzanymi pomiarami w jamovi: {-}
 
-1. You need one continuous outcome variable for each measurement occasion. Make sure that the measurement levels are set^[This is demonstrated in section \@ref(level-of-measurement).] so that the continuous variables are marked with <img src="images/icons/continuous.JPG" width="3%" alt=" the continuous data icon"/>.  
-A correct setup should look similar to this:  
+1. Potrzebna jest jedna ilościowa zmienna zależna dla każdego pomiaru. Upewnij się, że poziomy pomiaru są ustawione^[Jest to przedstawione w sekcji \@ref(level-of-measurement).] tak, że zmienna ilościowa jest oznaczona <img src="images/icons/continuous.jpeg" width="3%" alt=" the continuous data icon"/>.  
+Prawidłowe ustawienie powinno wyglądać podobnie do tego:  
 <img src="images/data_format/data_format_anova_repeated.JPG" width="40%"/>  
 
-2. Select `Analyses` -> `ANOVA` -> `Repeated Measures ANOVA`.  
-<img src="images/select/select_anova_repeated.JPG" width="40%"/> 
+2. Wybierz `Analyses` -> `ANOVA` -> `Repeated Measures ANOVA`.  
+<img src="images/select_anova_repeated.JPG" width="40%"/> 
 
-3. In the box __Repeated Measures Factors__: write the name of your outcome variable (e.g. My_scale) and name the levels for each measurement occasion (e.g. Pre, Post and 12 month follow-up). The images below shows the box with default values (left) and when the values has been set (right).  
-<img src="images/add_var/add_var_anova_repeated_naming_1.JPG" width="35%"/> `->` <img src="images/add_var/add_var_anova_repeated_naming_2.JPG" width="35%"/> 
+3. W polu __Repeated Measures Factors__: wpisz nazwę zmiennej zależnej (np. My_scale) i nazwij poziomy dla każdego pomiaru (np. Pre, Post i 12 month follow-up). Poniższe obrazy pokazują pole z wartościami domyślnymi (po lewej) oraz prawidłowe ustawienie wartości (po prawej).  
+<img src="images/add_var_anova_repeated_naming_1.JPG" width="35%"/> `->` <img src="images/add_var_anova_repeated_naming_2.JPG" width="35%"/> 
 
-4. Drag and drop your outcome variables to their respective cells in __Repeated Measures Cells__.  
-<img src="images/add_var/add_var_anova_repeated.JPG" width="70%"/> 
+4. Przeciągnij i upuść zmienne wynikowe do odpowiednich komórek w __Repeated Measures Cells__.  
+<img src="images/add_var_anova_repeated.JPG" width="70%"/> 
 
-5. The results are shown in the right pane:  
+5. Wyniki są wyświetlane w prawym panelu:  
 <img src="images/output/output_anova_repeated.JPG" width="70%"/> 
 

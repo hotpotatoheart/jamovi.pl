@@ -4,27 +4,28 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 ANOVA: Repeated Measures | The jamovi quickstart guide</title>
-  <meta name="description" content="9 ANOVA: Repeated Measures | The jamovi quickstart guide features a collection of non-technical tutorials on how to conduct common operations in jamovi. This includes how to conduct independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, and logistic regression. Additionally, the tutorials cover the use of csv files, wide data format, and setting the data type in jamovi." />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <title>9 ANOVA z powtarzanymi pomiarami | Jamovi - Skrócona Instrukcja Obsługi</title>
+  <meta name="description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 ANOVA: Repeated Measures | The jamovi quickstart guide" />
+  <meta property="og:title" content="9 ANOVA z powtarzanymi pomiarami | Jamovi - Skrócona Instrukcja Obsługi" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://jamoviguide.com" />
-  <meta property="og:image" content="https://jamoviguide.com/images/pixel.jpg" />
-  <meta property="og:description" content="9 ANOVA: Repeated Measures | The jamovi quickstart guide features a collection of non-technical tutorials on how to conduct common operations in jamovi. This includes how to conduct independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, and logistic regression. Additionally, the tutorials cover the use of csv files, wide data format, and setting the data type in jamovi." />
-  <meta name="github-repo" content="jRafi/jamoviguide.com" />
+  <meta property="og:url" content="https://jamovi.pl" />
+  <meta property="og:image" content="https://jamovi.pl//images/pixel.jpg" />
+  <meta property="og:description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="github-repo" content="hotpotatoheart/jamovi.pl" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 ANOVA: Repeated Measures | The jamovi quickstart guide" />
+  <meta name="twitter:title" content="9 ANOVA z powtarzanymi pomiarami | Jamovi - Skrócona Instrukcja Obsługi" />
   
-  <meta name="twitter:description" content="9 ANOVA: Repeated Measures | The jamovi quickstart guide features a collection of non-technical tutorials on how to conduct common operations in jamovi. This includes how to conduct independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, and logistic regression. Additionally, the tutorials cover the use of csv files, wide data format, and setting the data type in jamovi." />
-  <meta name="twitter:image" content="https://jamoviguide.com/images/pixel.jpg" />
+  <meta name="twitter:description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="twitter:image" content="https://jamovi.pl//images/pixel.jpg" />
 
-<meta name="author" content="Jonas Rafi" />
+<meta name="author" content="Jonas Rafi, Tekst oryginalny" />
+<meta name="author" content="Marek Bitner, Polskie tłumaczenie" />
+<meta name="author" content="Adrianna Szyszka, Polskie tłumaczenie" />
 
 
-<meta name="date" content="2020-06-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +34,8 @@
   
 <link rel="prev" href="factorial-anova.html"/>
 <link rel="next" href="mixed-anova.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,6 +52,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127170706-4"></script>
 <script>
@@ -75,11 +79,12 @@ window.cookieconsent.initialise({
   },
   "theme": "classic",
   "content": {
-    "message": "This website uses cookies.\n",
+    "message": "Ta strona używa ciasteczek.\n",
     "dismiss": "Ok"
   }
 })});
 </script>
+
 
 
 
@@ -96,25 +101,25 @@ window.cookieconsent.initialise({
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
-<li class="part"><span><b>Getting started</b></span></li>
-<li class="chapter" data-level="1" data-path="load-data-into-jamovi.html"><a href="load-data-into-jamovi.html"><i class="fa fa-check"></i><b>1</b> Opening data in jamovi</a></li>
-<li class="chapter" data-level="2" data-path="level-of-measurement.html"><a href="level-of-measurement.html"><i class="fa fa-check"></i><b>2</b> Setting the scale of measurement</a></li>
-<li class="chapter" data-level="3" data-path="descriptive-analyses.html"><a href="descriptive-analyses.html"><i class="fa fa-check"></i><b>3</b> Descriptive analyses</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Wstęp</a></li>
+<li class="part"><span><b>Podstawy Pracy</b></span></li>
+<li class="chapter" data-level="1" data-path="load-data-into-jamovi.html"><a href="load-data-into-jamovi.html"><i class="fa fa-check"></i><b>1</b> Otwieranie danych w jamovi</a></li>
+<li class="chapter" data-level="2" data-path="level-of-measurement.html"><a href="level-of-measurement.html"><i class="fa fa-check"></i><b>2</b> Ustawienie skali pomiaru</a></li>
+<li class="chapter" data-level="3" data-path="descriptive-analyses.html"><a href="descriptive-analyses.html"><i class="fa fa-check"></i><b>3</b> Statystyki opisowe</a></li>
 <li class="part"><span><b>T-Test</b></span></li>
-<li class="chapter" data-level="4" data-path="independent-samples-t-test.html"><a href="independent-samples-t-test.html"><i class="fa fa-check"></i><b>4</b> T-Test: Independent samples</a></li>
-<li class="chapter" data-level="5" data-path="paired-samples-t-test.html"><a href="paired-samples-t-test.html"><i class="fa fa-check"></i><b>5</b> T-Test: Paired samples</a></li>
-<li class="chapter" data-level="6" data-path="one-sample-t-test.html"><a href="one-sample-t-test.html"><i class="fa fa-check"></i><b>6</b> T-Test: One sample</a></li>
+<li class="chapter" data-level="4" data-path="independent-samples-t-test.html"><a href="independent-samples-t-test.html"><i class="fa fa-check"></i><b>4</b> T-Test: Próby niezależne</a></li>
+<li class="chapter" data-level="5" data-path="paired-samples-t-test.html"><a href="paired-samples-t-test.html"><i class="fa fa-check"></i><b>5</b> T-Test: Próby zależne</a></li>
+<li class="chapter" data-level="6" data-path="one-sample-t-test.html"><a href="one-sample-t-test.html"><i class="fa fa-check"></i><b>6</b> T-Test: Jedna próba</a></li>
 <li class="part"><span><b>ANOVA</b></span></li>
-<li class="chapter" data-level="7" data-path="oneway-anova.html"><a href="oneway-anova.html"><i class="fa fa-check"></i><b>7</b> ANOVA: Oneway</a></li>
-<li class="chapter" data-level="8" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>8</b> ANOVA: Factorial</a></li>
-<li class="chapter" data-level="9" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>9</b> ANOVA: Repeated Measures</a></li>
-<li class="chapter" data-level="10" data-path="mixed-anova.html"><a href="mixed-anova.html"><i class="fa fa-check"></i><b>10</b> ANOVA: Mixed</a></li>
-<li class="part"><span><b>Regression</b></span></li>
-<li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Linear Regression</a></li>
-<li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Logistic Regression</a></li>
-<li class="part"><span><b>I Going further</b></span></li>
-<li class="chapter" data-level="13" data-path="where-to-go-next.html"><a href="where-to-go-next.html"><i class="fa fa-check"></i><b>13</b> Where to go next</a></li>
+<li class="chapter" data-level="7" data-path="oneway-anova.html"><a href="oneway-anova.html"><i class="fa fa-check"></i><b>7</b> Jednoczynnikowa ANOVA</a></li>
+<li class="chapter" data-level="8" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>8</b> Wieloczynnikowa ANOVA</a></li>
+<li class="chapter" data-level="9" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>9</b> ANOVA z powtarzanymi pomiarami</a></li>
+<li class="chapter" data-level="10" data-path="mixed-anova.html"><a href="mixed-anova.html"><i class="fa fa-check"></i><b>10</b> ANOVA w schemacie mieszanym</a></li>
+<li class="part"><span><b>Regresja</b></span></li>
+<li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Regresja liniowa</a></li>
+<li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Regresja logistyczna</a></li>
+<li class="part"><span><b>I Co dalej</b></span></li>
+<li class="chapter" data-level="13" data-path="co-dalej-w-jamovi.html"><a href="co-dalej-w-jamovi.html"><i class="fa fa-check"></i><b>13</b> Co dalej w jamovi?</a></li>
 </ul>
 
       </nav>
@@ -124,7 +129,7 @@ window.cookieconsent.initialise({
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The jamovi quickstart guide</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Jamovi - Skrócona Instrukcja Obsługi</a>
           </h1>
         </div>
 
@@ -132,21 +137,21 @@ window.cookieconsent.initialise({
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="repeated-measures-anova" class="section level1">
-<h1><span class="header-section-number">9</span> ANOVA: Repeated Measures</h1>
-<div id="how-to-perform-a-repeated-measures-anova-in-jamovi" class="section level4 unnumbered">
-<h4>How to perform a repeated measures ANOVA in jamovi:</h4>
+<div id="repeated-measures-anova" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> ANOVA z powtarzanymi pomiarami</h1>
+<div id="jak-wykonać-anova-z-powtarzanymi-pomiarami-w-jamovi" class="section level4 unnumbered">
+<h4>Jak wykonać ANOVA z powtarzanymi pomiarami w jamovi:</h4>
 <ol style="list-style-type: decimal">
-<li><p>You need one continuous outcome variable for each measurement occasion. Make sure that the measurement levels are set<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> so that the continuous variables are marked with <img src="images/icons/continuous.JPG" width="3%" alt=" the continuous data icon"/>.<br />
-A correct setup should look similar to this:<br />
+<li><p>Potrzebna jest jedna ilościowa zmienna zależna dla każdego pomiaru. Upewnij się, że poziomy pomiaru są ustawione<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> tak, że zmienna ilościowa jest oznaczona <img src="images/icons/continuous.jpeg" width="3%" alt=" the continuous data icon"/>.<br />
+Prawidłowe ustawienie powinno wyglądać podobnie do tego:<br />
 <img src="images/data_format/data_format_anova_repeated.JPG" width="40%"/></p></li>
-<li><p>Select <code>Analyses</code> -&gt; <code>ANOVA</code> -&gt; <code>Repeated Measures ANOVA</code>.<br />
-<img src="images/select/select_anova_repeated.JPG" width="40%"/></p></li>
-<li><p>In the box <strong>Repeated Measures Factors</strong>: write the name of your outcome variable (e.g. My_scale) and name the levels for each measurement occasion (e.g. Pre, Post and 12 month follow-up). The images below shows the box with default values (left) and when the values has been set (right).<br />
-<img src="images/add_var/add_var_anova_repeated_naming_1.JPG" width="35%"/> <code>-&gt;</code> <img src="images/add_var/add_var_anova_repeated_naming_2.JPG" width="35%"/></p></li>
-<li><p>Drag and drop your outcome variables to their respective cells in <strong>Repeated Measures Cells</strong>.<br />
-<img src="images/add_var/add_var_anova_repeated.JPG" width="70%"/></p></li>
-<li><p>The results are shown in the right pane:<br />
+<li><p>Wybierz <code>Analyses</code> -&gt; <code>ANOVA</code> -&gt; <code>Repeated Measures ANOVA</code>.<br />
+<img src="images/select_anova_repeated.JPG" width="40%"/></p></li>
+<li><p>W polu <strong>Repeated Measures Factors</strong>: wpisz nazwę zmiennej zależnej (np. My_scale) i nazwij poziomy dla każdego pomiaru (np. Pre, Post i 12 month follow-up). Poniższe obrazy pokazują pole z wartościami domyślnymi (po lewej) oraz prawidłowe ustawienie wartości (po prawej).<br />
+<img src="images/add_var_anova_repeated_naming_1.JPG" width="35%"/> <code>-&gt;</code> <img src="images/add_var_anova_repeated_naming_2.JPG" width="35%"/></p></li>
+<li><p>Przeciągnij i upuść zmienne wynikowe do odpowiednich komórek w <strong>Repeated Measures Cells</strong>.<br />
+<img src="images/add_var_anova_repeated.JPG" width="70%"/></p></li>
+<li><p>Wyniki są wyświetlane w prawym panelu:<br />
 <img src="images/output/output_anova_repeated.JPG" width="70%"/></p></li>
 </ol>
 
@@ -154,8 +159,8 @@ A correct setup should look similar to this:<br />
 </div>
 <div class="footnotes">
 <hr />
-<ol start="7">
-<li id="fn7"><p>This is demonstrated in section <a href="level-of-measurement.html#level-of-measurement">2</a>.<a href="repeated-measures-anova.html#fnref7" class="footnote-back">↩</a></p></li>
+<ol start="6">
+<li id="fn6"><p>Jest to przedstawione w sekcji <a href="level-of-measurement.html#level-of-measurement">2</a>.<a href="repeated-measures-anova.html#fnref6" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -187,6 +192,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -195,7 +201,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jRafi/jamoviguide.com/edit/master/33-ANOVA-rm.Rmd",
+"link": "https://github.com/hotpotatoheart/jamovi.pl/edit/master/33-ANOVA-rm.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -207,6 +213,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "scroll_highlight": true

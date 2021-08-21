@@ -1,16 +1,16 @@
-# Setting the scale of measurement {#level-of-measurement}
+# Ustawienie skali pomiaru {#level-of-measurement}
 
-Before conducting analyses in jamovi, you usually need to set the <a href="https://en.wikipedia.org/wiki/Level_of_measurement">scale of measurement</a> for each variable included in the analysis. When you load data into jamovi, it is common for variables to get the lowest level (nominal). This means that, for example, if you are conducting a two sample t-test you typically need to change both variables from __nominal__ to __continuous__.
+Przed przeprowadzeniem analiz w jamovi zazwyczaj trzeba ustawić <a href="https://pl.wikipedia.org/wiki/Skala_pomiarowa">skalę pomiarową</a> dla każdej zmiennej uwzględnionej w analizie. Kiedy ładujesz dane do jamovi, często zmienne otrzymują najniższy poziom pomiaru (nominalny). Oznacza to, że na przykład, jeśli przeprowadzasz dwupróbowy test t, zazwyczaj musisz zmienić obie zmienne z __nominalnej (nominal)__ do __ilościowej (continuous)__.
 
-#### How to set the scale of measurement for a variable {-}
+#### Jak ustawić skalę pomiaru dla zmiennej? {-}
 
-1. Double click the variable you want to edit.  
-<img src="images/data_format/select_variable.JPG" alt="Wide data" width="60%"/>  
+1. Kliknij dwukrotnie zmienną, którą chcesz edytować.
+<img src="images/select_variable.JPG" alt="Wide data" width="60%"/>  
 
-2. In the data variable pane, select the desired level: `ID`, `Nominal`, `Ordinal` or `Continuous`.  
-<img src="images/data_format/set_data_type.JPG" alt="Wide data" width="80%"/>  
+2. W panelu zmiennych danych wybierz żądany poziom: `ID`, `Nominalny (Nominal)`, `Porządkowy (Ordinal)` or `Ilościowy (Continuous)`.  
+<img src="images/set_data_type.JPG" alt="Wide data" width="80%"/>  
 
-3. Lastly, press the up arrow to hide the data variable pane, or the left or right arrows to edit another variable.  
-<img src="images/data_format/set_data_type_2.JPG" alt="Wide data" width="80%"/>  
+3. Na koniec naciśnij strzałkę w górę, aby ukryć panel zmiennych, lub strzałki w lewo lub w prawo, aby edytować inną zmienną.  
+<img src="images/set_data_type_2.JPG" alt="Wide data" width="80%"/>  
 
 

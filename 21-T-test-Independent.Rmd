@@ -1,18 +1,18 @@
 # (PART\*) T-Test {-}
 
-# T-Test: Independent samples {#independent-samples-t-test}
+# T-Test: Próby niezależne {#independent-samples-t-test}
 
-#### How to perform an independent samples t-test in jamovi: {-}
+#### Jak wykonać test t dla prób niezależnych w jamovi: {-}
 
-1. You need one grouping variable with two levels (e.g. treatment/control) and one continuous outcome variable. Make sure that the measurement levels are set^[This is demonstrated in section \@ref(level-of-measurement).] so that the grouping variable is marked with <img src="images/icons/nominal.JPG" width="3%" alt=" grouped data icon"/> and the continuous variable is marked with <img src="images/icons/continuous.JPG" width="3%" alt=" the continuous data icon"/>.  
-A correct setup should look similar to this:  
+1. Potrzebna jest jedna zmienna grupująca z dwoma poziomami (np. grupa eksperymentalna i kontrolna) i jedna zmienna ilościowa. Upewnij się, że poziomy pomiaru są prawidłowo ustawione^[Zademonstrowano to w sekcji \@ref(level-of-measurement).] tak, że zmienna grupująca jest oznaczona <img src="images/icons/nominal.jpeg" width="3%" alt=" grouped data icon"/> a zmienna ilościowa jest oznaczona <img src="images/icons/continuous.jpeg" width="3%" alt=" the continuous data icon"/>.  
+Prawidłowe ustawienie powinno wyglądać podobnie do tego:  
 <img src="images/data_format/data_format_ttest_independent.JPG" width="40%"/> 
 
-2. Select `Analyses` -> `T-Tests` -> `Independent Samples T-Test`.  
-<img src="images/select/select_ttest_independent.JPG" width="40%"/> 
+2. Wybierz `Analyses` -> `T-Tests` -> `Independent Samples T-Test`.  
+<img src="images/select_ttest_independent.JPG" width="40%"/> 
 
-3. Drag and drop your outcome variable to __Dependent Variables__ and your grouping variable to __Grouping Variable__.  
-<img src="images/add_var/add_var_ttest_independent.JPG" width="70%"/> 
+3. Przeciągnij i upuść zmienną wyniku do __Dependent Variables__ i zmienną grupującą do __Grouping Variable__.  
+<img src="images/add_var_ttest_independent.JPG" width="70%"/> 
 
-4. The result is shown in the right panel
+4. Wynik jest wyświetlany w prawym panelu.
 

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>13 Co dalej w jamovi? | Jamovi - Skrócona Instrukcja Obsługi</title>
+  <meta name="description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="13 Co dalej w jamovi? | Jamovi - Skrócona Instrukcja Obsługi" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://jamovi.pl" />
+  <meta property="og:image" content="https://jamovi.pl//images/pixel.jpg" />
+  <meta property="og:description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="github-repo" content="hotpotatoheart/jamovi.pl" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="13 Co dalej w jamovi? | Jamovi - Skrócona Instrukcja Obsługi" />
+  
+  <meta name="twitter:description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="twitter:image" content="https://jamovi.pl//images/pixel.jpg" />
+
+<meta name="author" content="Jonas Rafi, Tekst oryginalny" />
+<meta name="author" content="Marek Bitner, Polskie tłumaczenie" />
+<meta name="author" content="Adrianna Szyszka, Polskie tłumaczenie" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="logistic-regression.html"/>
+
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127170706-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127170706-4');
+</script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "#4b81e8"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Ta strona używa ciasteczek.\n",
+    "dismiss": "Ok"
+  }
+})});
+</script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Wstęp</a></li>
+<li class="part"><span><b>Podstawy Pracy</b></span></li>
+<li class="chapter" data-level="1" data-path="load-data-into-jamovi.html"><a href="load-data-into-jamovi.html"><i class="fa fa-check"></i><b>1</b> Otwieranie danych w jamovi</a></li>
+<li class="chapter" data-level="2" data-path="level-of-measurement.html"><a href="level-of-measurement.html"><i class="fa fa-check"></i><b>2</b> Ustawienie skali pomiaru</a></li>
+<li class="chapter" data-level="3" data-path="descriptive-analyses.html"><a href="descriptive-analyses.html"><i class="fa fa-check"></i><b>3</b> Statystyki opisowe</a></li>
+<li class="part"><span><b>T-Test</b></span></li>
+<li class="chapter" data-level="4" data-path="independent-samples-t-test.html"><a href="independent-samples-t-test.html"><i class="fa fa-check"></i><b>4</b> T-Test: Próby niezależne</a></li>
+<li class="chapter" data-level="5" data-path="paired-samples-t-test.html"><a href="paired-samples-t-test.html"><i class="fa fa-check"></i><b>5</b> T-Test: Próby zależne</a></li>
+<li class="chapter" data-level="6" data-path="one-sample-t-test.html"><a href="one-sample-t-test.html"><i class="fa fa-check"></i><b>6</b> T-Test: Jedna próba</a></li>
+<li class="part"><span><b>ANOVA</b></span></li>
+<li class="chapter" data-level="7" data-path="oneway-anova.html"><a href="oneway-anova.html"><i class="fa fa-check"></i><b>7</b> Jednoczynnikowa ANOVA</a></li>
+<li class="chapter" data-level="8" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>8</b> Wieloczynnikowa ANOVA</a></li>
+<li class="chapter" data-level="9" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>9</b> ANOVA z powtarzanymi pomiarami</a></li>
+<li class="chapter" data-level="10" data-path="mixed-anova.html"><a href="mixed-anova.html"><i class="fa fa-check"></i><b>10</b> ANOVA w schemacie mieszanym</a></li>
+<li class="part"><span><b>Regresja</b></span></li>
+<li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Regresja liniowa</a></li>
+<li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Regresja logistyczna</a></li>
+<li class="part"><span><b>I Co dalej</b></span></li>
+<li class="chapter" data-level="13" data-path="co-dalej-w-jamovi.html"><a href="co-dalej-w-jamovi.html"><i class="fa fa-check"></i><b>13</b> Co dalej w jamovi?</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Jamovi - Skrócona Instrukcja Obsługi</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="co-dalej-w-jamovi" class="section level1" number="13">
+<h1><span class="header-section-number">13</span> Co dalej w jamovi?</h1>
+<p>Jeśli potrzebujesz wprowadzenia do statystyki, polecamy anglojęzyczny, darmowy e-book <a href="https://www.learnstatswithjamovi.com/">Learning statistics with jamovi</a> napisany przez Danielle J. Navarro i David R. Foxcroft.</p>
+<p>Aby uzyskać inne zasoby związane z jamovi, zobacz anglojęzyczne źródło <a href="https://www.jamovi.org/community.html">community resources page</a>.</p>
+<p>Pytania dotyczące jamovi można zadać na forum pod adresem <a href="https://forum.jamovi.org/">jamovi.org</a> (forum w języku angielskim).</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="logistic-regression.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/hotpotatoheart/jamovi.pl/edit/master/99-End.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

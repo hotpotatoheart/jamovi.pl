@@ -1,19 +1,24 @@
-# (PART\*) Regression {-}
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+# (PART\*) Regresja {-}
 
-# Linear Regression {#linear-regression}  
+# Regresja liniowa {#linear-regression}  
 
-#### How to perform a linear regression in jamovi: {-}
+#### Jak wykonać regresję liniową w jamovi: {-}
 
-1. You need one predictor variable and one continuous outcome variable. Make sure that the measurement levels are set^[This is demonstrated in section \@ref(level-of-measurement).].  
-A correct setup should look similar to this:  
-<img src="images/data_format/data_format_regression.JPG" width="25%"/>  
+1. Potrzebna jest jedna zmienna objaśniająca i jedna ilościowa zmienna zależna. Upewnij się, że poziomy pomiaru są ustawione^[Jest to przedstawione w sekcji \@ref(level-of-measurement).].  
+Prawidłowe ustawienie powinno wyglądać podobnie do tego:  
+<img src="images/data_format_regression.JPG" width="25%"/>  
 
-2. Select `Analyses` -> `Regression` -> `Linear Regression`.  
-<img src="images/select/select_regression_linear.JPG" width="40%"/> 
+2. Wybierz `Analyses` -> `Regression` -> `Linear Regression`.  
+<img src="images/select_regression_linear.JPG" width="40%"/> 
 
-3. Drag and drop your outcome variable to __Dependent Variable__ and your predictor variable to __Covariates__ if it is continuous or to __Factors__ if it is categorical.
-<img src="images/add_var/add_var_regression.JPG" width="70%"/> 
+3. Przeciągnij i upuść zmienną zależną do __Dependent Variable__ a zmienną objaśniającą do __Covariates__ jeśli jest to zmienna ilościowa lub do __Factors__ jeśli jest to zmienna kategorialna.
+<img src="images/add_var_regression.JPG" width="70%"/> 
 
-4. The result is shown in the right panel:  
-<img src="images/output/output_regression.JPG" width="50%"/> 
+4. Wyniki są wyświetlane w prawym panelu:  
+<img src="images/output_regression.JPG" width="50%"/> 
 

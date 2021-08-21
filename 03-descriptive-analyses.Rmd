@@ -1,20 +1,21 @@
-# Descriptive analyses {#descriptive-analyses}
+# Statystyki opisowe {#descriptive-analyses}
 
-#### How to perform descriptive analyses and create graphs in jamovi: {-}
+#### Jak wykonywać analizy opisowe i tworzyć wykresy w jamovi: {-}
 
-1. Select `Analyses` -> `Exploration` -> `Descriptives`.  
-<img src="images/select/select_descriptives.JPG" width="60%"/> 
+1. Wybierz `Analyses` -> `Exploration` -> `Descriptives`.  
+<img src="images/select_descriptives.JPG" width="60%"/> 
 
-2. Drag and drop the variables you want descriptive analyses for to __Variables__.  
-<img src="images/add_var/add_var_descriptives.JPG" width="70%"/> 
+2. Przeciągnij i upuść zmienne, dla których chcesz przeprowadzić analizy opisowe __Variables__.  
+<img src="images/add_var_descriptives.JPG" width="70%"/> 
 
-3. The result is shown in the right panel. Right click the output to save or copy it.
-<img src="images/output/output_descriptives1.JPG" width="40%"/>
+3. Wynik jest wyświetlany w prawym panelu. Kliknij prawym przyciskiem na dane wyjściowe, aby je zapisać lub skopiować.
 
-4. To split your descriptive analyses on a categorical variable (e.g. to separate by gender), move that variable to __Split by__.
+<img src="images/output_descriptives1.JPG" width="50%"/>
 
-5. Click the __Statistics__ tab to see more alternatives.
-<img src="images/select/select_descriptives_statistics.JPG" width="60%"/> 
+4. Aby podzielić analizy opisowe na zmienną kategoryczną (np. rozdzielić według płci), przenieś tę zmienną do __Split by__.
 
-6. To create a plot based on the above choices, click the __Plots__ tab and tick the box of your desired plot.  
-<img src="images/select/select_descriptives_plots.JPG" width="60%"/> 
+5. Klinknij na zakładkę __Statistics__ by zobaczyć więcej opcji.
+<img src="images/select_descriptives_statistics.JPG" width="60%"/> 
+
+6. Aby utworzyć wykres w oparciu o powyższe opcje, kliknij na zakładkę __Plots__ i zaznacz wybraną opcję.  
+<img src="images/select_descriptives_plots.JPG" width="60%"/> 

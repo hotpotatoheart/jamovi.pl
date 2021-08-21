@@ -1,20 +1,20 @@
-# T-Test: One sample {#one-sample-t-test}
+# T-Test: Jedna próba {#one-sample-t-test}
 
-#### How to perform a one-sample t-test in jamovi: {-}
+#### Jak wykonać jednopróbkowy test t w jamovi: {-}
 
-1. You need one continuous variable and a mean to test against. Make sure that the measurement levels are set^[This is demonstrated in section \@ref(level-of-measurement).] so that the continuous variable is marked with <img src="images/icons/continuous.JPG" width="3%" alt=" the continuous data icon"/>.   
-A correct setup should look similar to this:  
+1. Potrzebujesz jednej zmiennej ciągłej i średniej do testowania. Upewnij się, że poziomy pomiaru są prawidłowo ustawione^[Zademonstrowano to w sekcji \@ref(level-of-measurement).] tak, że zmienna ilościowa jest oznaczona <img src="images/icons/continuous.jpeg" width="3%" alt=" the continuous data icon"/>.   
+Prawidłowa konfiguracja powinna wyglądać podobnie do:  
 <img src="images/data_format/data_format_ttest_one_sample.JPG" alt="Data till One Sample T-Test." width="30%"/>  
 
-2. Select `Analyses` -> `T-Tests` -> `One Sample T-Test`.  
-<img src="images/select/select_ttest_one_sample.JPG" width="40%"/> 
+2. Wybierz `Analyses` -> `T-Tests` -> `One Sample T-Test`.  
+<img src="images/select_ttest_one_sample.JPG" width="40%"/> 
 
-3. Drag and drop your dependent variable to __Dependent Variables__.  
-<img src="images/add_var/add_var_ttest_one_sample.JPG" width="70%"/> 
+3. Przeciągnij i upuść zmienną zależną do __Dependent Variables__.  
+<img src="images/add_var_ttest_one_sample.JPG" width="70%"/> 
 
-4. Locate the section __Hypothesis__ further down, this is where you enter the mean you want to test against.  
-<img src="images/add_var/add_var_ttest_one_sample_2.JPG" width="70%"/> 
+4. Zlokalizuj sekcje __Hypothesis__ na dole, tutaj wpisz średnią, z którą chcesz przeprowadzić test.  
+<img src="images/add_var_ttest_one_sample_2.jpeg" width="70%"/> 
 
-5. The result is shown in the right panel
+5. Wynik jest wyświetlany w prawym panelu.
 
 

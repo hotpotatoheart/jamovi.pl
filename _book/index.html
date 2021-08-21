@@ -4,27 +4,28 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>The jamovi quickstart guide</title>
-  <meta name="description" content="The jamovi quickstart guide features a collection of non-technical tutorials on how to conduct common operations in jamovi. This includes how to conduct independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, and logistic regression. Additionally, the tutorials cover the use of csv files, wide data format, and setting the data type in jamovi." />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <title>Jamovi - Skrócona Instrukcja Obsługi</title>
+  <meta name="description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="The jamovi quickstart guide" />
+  <meta property="og:title" content="Jamovi - Skrócona Instrukcja Obsługi" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://jamoviguide.com" />
-  <meta property="og:image" content="https://jamoviguide.com/images/pixel.jpg" />
-  <meta property="og:description" content="The jamovi quickstart guide features a collection of non-technical tutorials on how to conduct common operations in jamovi. This includes how to conduct independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, and logistic regression. Additionally, the tutorials cover the use of csv files, wide data format, and setting the data type in jamovi." />
-  <meta name="github-repo" content="jRafi/jamoviguide.com" />
+  <meta property="og:url" content="https://jamovi.pl" />
+  <meta property="og:image" content="https://jamovi.pl//images/pixel.jpg" />
+  <meta property="og:description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="github-repo" content="hotpotatoheart/jamovi.pl" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="The jamovi quickstart guide" />
+  <meta name="twitter:title" content="Jamovi - Skrócona Instrukcja Obsługi" />
   
-  <meta name="twitter:description" content="The jamovi quickstart guide features a collection of non-technical tutorials on how to conduct common operations in jamovi. This includes how to conduct independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, and logistic regression. Additionally, the tutorials cover the use of csv files, wide data format, and setting the data type in jamovi." />
-  <meta name="twitter:image" content="https://jamoviguide.com/images/pixel.jpg" />
+  <meta name="twitter:description" content="Przewodnik szybkiego startu jamovi zawiera zbiór krótkich instrukcji na temat wykonywania typowych operacji w jamovi. Obejmuje sposób przeprowadzania testu t dla niezależnych próbek, testu t dla par próbek, testu t dla jednej próbki, ANOVA, ANOVA z powtarzanymi pomiarami, ANOVA z czynnikami, mieszana ANOVA, regresja liniowa i regresja logistyczna. Ponadto samouczki obejmują korzystanie z plików csv, szeroki format danych i ustawianie typu danych w jamovi." />
+  <meta name="twitter:image" content="https://jamovi.pl//images/pixel.jpg" />
 
-<meta name="author" content="Jonas Rafi" />
+<meta name="author" content="Jonas Rafi, Tekst oryginalny" />
+<meta name="author" content="Marek Bitner, Polskie tłumaczenie" />
+<meta name="author" content="Adrianna Szyszka, Polskie tłumaczenie" />
 
 
-<meta name="date" content="2020-06-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +34,8 @@
   
 
 <link rel="next" href="load-data-into-jamovi.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,6 +52,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127170706-4"></script>
 <script>
@@ -75,11 +79,12 @@ window.cookieconsent.initialise({
   },
   "theme": "classic",
   "content": {
-    "message": "This website uses cookies.\n",
+    "message": "Ta strona używa ciasteczek.\n",
     "dismiss": "Ok"
   }
 })});
 </script>
+
 
 
 
@@ -96,25 +101,25 @@ window.cookieconsent.initialise({
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
-<li class="part"><span><b>Getting started</b></span></li>
-<li class="chapter" data-level="1" data-path="load-data-into-jamovi.html"><a href="load-data-into-jamovi.html"><i class="fa fa-check"></i><b>1</b> Opening data in jamovi</a></li>
-<li class="chapter" data-level="2" data-path="level-of-measurement.html"><a href="level-of-measurement.html"><i class="fa fa-check"></i><b>2</b> Setting the scale of measurement</a></li>
-<li class="chapter" data-level="3" data-path="descriptive-analyses.html"><a href="descriptive-analyses.html"><i class="fa fa-check"></i><b>3</b> Descriptive analyses</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Wstęp</a></li>
+<li class="part"><span><b>Podstawy Pracy</b></span></li>
+<li class="chapter" data-level="1" data-path="load-data-into-jamovi.html"><a href="load-data-into-jamovi.html"><i class="fa fa-check"></i><b>1</b> Otwieranie danych w jamovi</a></li>
+<li class="chapter" data-level="2" data-path="level-of-measurement.html"><a href="level-of-measurement.html"><i class="fa fa-check"></i><b>2</b> Ustawienie skali pomiaru</a></li>
+<li class="chapter" data-level="3" data-path="descriptive-analyses.html"><a href="descriptive-analyses.html"><i class="fa fa-check"></i><b>3</b> Statystyki opisowe</a></li>
 <li class="part"><span><b>T-Test</b></span></li>
-<li class="chapter" data-level="4" data-path="independent-samples-t-test.html"><a href="independent-samples-t-test.html"><i class="fa fa-check"></i><b>4</b> T-Test: Independent samples</a></li>
-<li class="chapter" data-level="5" data-path="paired-samples-t-test.html"><a href="paired-samples-t-test.html"><i class="fa fa-check"></i><b>5</b> T-Test: Paired samples</a></li>
-<li class="chapter" data-level="6" data-path="one-sample-t-test.html"><a href="one-sample-t-test.html"><i class="fa fa-check"></i><b>6</b> T-Test: One sample</a></li>
+<li class="chapter" data-level="4" data-path="independent-samples-t-test.html"><a href="independent-samples-t-test.html"><i class="fa fa-check"></i><b>4</b> T-Test: Próby niezależne</a></li>
+<li class="chapter" data-level="5" data-path="paired-samples-t-test.html"><a href="paired-samples-t-test.html"><i class="fa fa-check"></i><b>5</b> T-Test: Próby zależne</a></li>
+<li class="chapter" data-level="6" data-path="one-sample-t-test.html"><a href="one-sample-t-test.html"><i class="fa fa-check"></i><b>6</b> T-Test: Jedna próba</a></li>
 <li class="part"><span><b>ANOVA</b></span></li>
-<li class="chapter" data-level="7" data-path="oneway-anova.html"><a href="oneway-anova.html"><i class="fa fa-check"></i><b>7</b> ANOVA: Oneway</a></li>
-<li class="chapter" data-level="8" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>8</b> ANOVA: Factorial</a></li>
-<li class="chapter" data-level="9" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>9</b> ANOVA: Repeated Measures</a></li>
-<li class="chapter" data-level="10" data-path="mixed-anova.html"><a href="mixed-anova.html"><i class="fa fa-check"></i><b>10</b> ANOVA: Mixed</a></li>
-<li class="part"><span><b>Regression</b></span></li>
-<li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Linear Regression</a></li>
-<li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Logistic Regression</a></li>
-<li class="part"><span><b>I Going further</b></span></li>
-<li class="chapter" data-level="13" data-path="where-to-go-next.html"><a href="where-to-go-next.html"><i class="fa fa-check"></i><b>13</b> Where to go next</a></li>
+<li class="chapter" data-level="7" data-path="oneway-anova.html"><a href="oneway-anova.html"><i class="fa fa-check"></i><b>7</b> Jednoczynnikowa ANOVA</a></li>
+<li class="chapter" data-level="8" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>8</b> Wieloczynnikowa ANOVA</a></li>
+<li class="chapter" data-level="9" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>9</b> ANOVA z powtarzanymi pomiarami</a></li>
+<li class="chapter" data-level="10" data-path="mixed-anova.html"><a href="mixed-anova.html"><i class="fa fa-check"></i><b>10</b> ANOVA w schemacie mieszanym</a></li>
+<li class="part"><span><b>Regresja</b></span></li>
+<li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Regresja liniowa</a></li>
+<li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Regresja logistyczna</a></li>
+<li class="part"><span><b>I Co dalej</b></span></li>
+<li class="chapter" data-level="13" data-path="co-dalej-w-jamovi.html"><a href="co-dalej-w-jamovi.html"><i class="fa fa-check"></i><b>13</b> Co dalej w jamovi?</a></li>
 </ul>
 
       </nav>
@@ -124,7 +129,7 @@ window.cookieconsent.initialise({
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The jamovi quickstart guide</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Jamovi - Skrócona Instrukcja Obsługi</a>
           </h1>
         </div>
 
@@ -133,20 +138,24 @@ window.cookieconsent.initialise({
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">The jamovi quickstart guide</h1>
-<p class="author"><em>Jonas Rafi</em></p>
-<p class="date"><em>2020-06-03</em></p>
+<h1 class="title">Jamovi - Skrócona Instrukcja Obsługi</h1>
+<p class="author"><em>Jonas Rafi, Tekst oryginalny</em></p>
+<p class="author"><em>Marek Bitner, Polskie tłumaczenie</em></p>
+<p class="author"><em>Adrianna Szyszka, Polskie tłumaczenie</em></p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome</h1>
-<p>The aim of this website is to provide short, non-technical tutorials on how to do common procedures in jamovi. However, it is not a resource on statistics.</p>
-<p>If you require an introduction to statistics, there are plenty of other resources, e.g the free e-book <a href="https://www.learnstatswithjamovi.com/">Learning statistics with jamovi</a> by Navarro and Foxcroft.</p>
-<p><strong>Contact</strong></p>
-<p>Notice something that is missing or could be improved? Feel free to contact me at jonas.rafi &lt;at &gt; psychology.su.se.</p>
-<p><strong>Other languages</strong></p>
-<p>See the <a href="https://www.jamovi.org/community.html">jamovi coummunity resource page</a> for current translations into other languages.</p>
-<p><strong>License</strong></p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+<div id="wstęp" class="section level1 unnumbered">
+<h1>Wstęp</h1>
+<p><strong>Czym jest jamovi?</strong></p>
+<p>jamovi to darmowy pakiet statystyczny „trzeciej generacji”. Zaprojektowany od podstaw, aby był łatwy w użyciu, jamovi jest alternatywą dla kosztownego oprogramowania statystycznego, takiego jak SPSS i SAS. Najnoszą dystrybucję programu możesz znaleźć na <a href="https://www.jamovi.org/"> oficjalnej stronie Jamovi</a> (strona w języku angielskim).</p>
+<p><strong>Czym jest ten dokument?</strong></p>
+<p>Celem tej strony jest dostarczenie krótkich intstrukcji dotyczących wykonywania typowych procedur w jamovi. Nie jest to jednak podręcznik statystyczny.</p>
+<p>Jeśli potrzebujesz wprowadzenia do statystyki, istnieje wiele innych zasobów, np. bezpłatny anglojęzyczny e-book <a href="https://www.learnstatswithjamovi.com/">Learning statistics with jamovi</a> autorstwa Navarro i Foxcroft.</p>
+<p><strong>Kontakt</strong></p>
+<p>Czy widzisz coś, czego brakuje lub możnaby poprawić? Zapraszam do kontaktu pod adresem marek.bitner &lt;at &gt; gmail.com.</p>
+<p><strong>Inne języki</strong></p>
+<p>W celu znalezienia materiałów w innych językach odwiedź <a href="https://www.jamovi.org/community.html">jamovi coummunity resource page</a>.</p>
+<p><strong>Licencja</strong></p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Tę instrukcję stworzono pod licencją: <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
 
 </div>
 
@@ -181,6 +190,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -189,7 +199,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jRafi/jamoviguide.com/edit/master/index.Rmd",
+"link": "https://github.com/hotpotatoheart/jamovi.pl/edit/master/index.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -201,6 +211,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "scroll_highlight": true
